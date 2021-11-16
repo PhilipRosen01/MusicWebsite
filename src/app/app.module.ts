@@ -9,6 +9,11 @@ import { HoverStyleDirective } from './hover-style.directive';
 import { HoverCardDirective } from './hover-card.directive';
 import { MessagesComponent } from './messages/messages.component';
 
+import { HttpClientModule} from "@angular/common/http";
+import { HttpClientInMemoryWebApiModule} from "angular-in-memory-web-api";
+import { InMemoryDataService} from "./in-memory-data.service";
+import { CreateComponentComponent } from './create-component/create-component.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +22,8 @@ import { MessagesComponent } from './messages/messages.component';
     TypeFilterPipe,
     HoverStyleDirective,
     HoverCardDirective,
-    MessagesComponent
+    MessagesComponent,
+    CreateComponentComponent
   ],
   imports: [
     BrowserModule

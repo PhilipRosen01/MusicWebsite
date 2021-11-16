@@ -15,3 +15,10 @@ export class MessageService {
     this.messages = [];
   }
 }
+
+// export class InMemoryDataService implements  InMemoryDbService {
+//   createDb() {
+//     const content : Content[] = ....
+//     return {content};
+//   }
+// }
